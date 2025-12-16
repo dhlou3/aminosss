@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Amine - Software Engineer | Web Development & Data Analytics</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Amine.</a>
+            <div class="nav-links">
+                <a href="index.html" class="active">Home</a>
+                <a href="Projects.html">Projects</a>
+            </div>
+            <a href="#contact" class="btn btn-primary">Let's Work</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <canvas id="hero-canvas"></canvas>
+        <div class="container hero-container">
+            <div class="hero-grid">
+                <!-- Left: Text -->
+                <div class="hero-content">
+                    <span class="badge-pill reveal">👋 Hello, I'm Amine</span>
+                    <h1 class="reveal">Software Engineer <br> & <span class="text-highlight">Data Analyst.</span></h1>
+                    <p class="hero-subtitle reveal">I'm a Software Engineering student at Xiamen University Malaysia —
+                        one of China's top universities. I build modern websites and create powerful
+                        data dashboards with Google Looker Studio.</p>
+                    <div class="hero-actions reveal">
+                        <a href="#contact" class="btn btn-primary btn-lg">Start a Project</a>
+                        <a href="Projects.html" class="btn btn-secondary btn-lg">View My Work</a>
+                    </div>
+                </div>
+
+                <!-- Right: Coding Animation -->
+                <div class="hero-visual reveal">
+                    <div class="code-visual">
+                        <div class="code-header">
+                            <span class="dot red"></span>
+                            <span class="dot yellow"></span>
+                            <span class="dot green"></span>
+                        </div>
+                        <div class="code-content" id="typing-code">
+                            <!-- Javascript will type here -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <!-- Tech Stack Ticker -->
+    <div class="tech-stack">
+        <div class="tech-track">
+            <span class="tech-logo">Python</span>
+            <span class="tech-logo">JavaScript</span>
+            <span class="tech-logo">React</span>
+            <span class="tech-logo">Next.js</span>
+            <span class="tech-logo">Looker Studio</span>
+            <span class="tech-logo">Google BigQuery</span>
+            <span class="tech-logo">Node.js</span>
+            <span class="tech-logo">SQL</span>
+            <!-- Duplicate for infinite scroll illusion -->
+            <span class="tech-logo">Python</span>
+            <span class="tech-logo">JavaScript</span>
+            <span class="tech-logo">React</span>
+            <span class="tech-logo">Next.js</span>
+            <span class="tech-logo">Looker Studio</span>
+            <span class="tech-logo">Google BigQuery</span>
+            <span class="tech-logo">Node.js</span>
+            <span class="tech-logo">SQL</span>
+        </div>
+    </div>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title reveal">What I Do</h2>
+            <div class="expertise-grid" style="max-width: 800px; margin: 0 auto;">
+
+                <!-- Card 1: Web Dev -->
+                <div class="expertise-card reveal">
+                    <div class="card-bg" style="background-image: url('images/service_web.png');"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <h3>Web Development</h3>
+                        <p>I build high-performance websites and web applications using modern frameworks
+                            like React and Next.js. Fast, secure, and scalable.</p>
+                        <span class="card-hidden-text">Tools: React, Next.js, Node.js, TypeScript</span>
+                    </div>
+                </div>
+
+                <!-- Card 2: Analytics -->
+                <div class="expertise-card reveal">
+                    <div class="card-bg" style="background-image: url('images/service_analytics.png');"></div>
+                    <div class="card-overlay"></div>
+                    <div class="card-content">
+                        <h3>Google Looker Studio</h3>
+                        <p>I create interactive dashboards and reports using Google Looker Studio
+                            to help businesses make data-driven decisions.</p>
+                        <span class="card-hidden-text">Tools: Looker Studio, BigQuery, SQL, Python</span>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section class="section" style="background-color: #fff; overflow: hidden;">
+        <div class="container">
+            <h2 class="section-title reveal">How I Work</h2>
+            <div class="process-timeline">
+
+                <!-- Step 1 -->
+                <div class="timeline-row reveal">
+                    <div class="timeline-image">
+                        <img src="https://images.unsplash.com/photo-1551288049-bebda4e38f71?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Understanding">
+                    </div>
+                    <div class="timeline-content">
+                        <span class="step-badge">01</span>
+                        <h3>Understanding You</h3>
+                        <p class="process-desc">I start by learning about your business and goals.
+                            I listen carefully to understand exactly what you need.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="timeline-row reverse reveal">
+                    <div class="timeline-image">
+                        <img src="https://images.unsplash.com/photo-1507925921958-8a62f3d1a50d?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Planning">
+                    </div>
+                    <div class="timeline-content">
+                        <span class="step-badge">02</span>
+                        <h3>The Plan</h3>
+                        <p class="process-desc">I create a clear roadmap for your project with
+                            timelines and milestones — no confusing jargon.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="timeline-row reveal">
+                    <div class="timeline-image">
+                        <img src="https://images.unsplash.com/photo-1555066931-4365d14bab8c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Development">
+                    </div>
+                    <div class="timeline-content">
+                        <span class="step-badge">03</span>
+                        <h3>Building It</h3>
+                        <p class="process-desc">I develop your solution using the latest technologies.
+                            Simple for you, powerful under the hood.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="timeline-row reverse reveal">
+                    <div class="timeline-image">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80"
+                            alt="Results">
+                    </div>
+                    <div class="timeline-content">
+                        <span class="step-badge">04</span>
+                        <h3>Launch & Support</h3>
+                        <p class="process-desc">I don't just deliver and disappear. I help you launch
+                            and provide ongoing support to ensure success.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="section contact-section" id="contact">
+        <div class="container">
+            <div class="contact-split">
+                <!-- Left: Form -->
+                <div class="contact-form-col reveal">
+                    <h2>Let's Work Together</h2>
+                    <p style="margin-bottom: 30px; color: var(--text-secondary);">Tell me about your project.
+                        I'll get back to you within 24 hours.</p>
+
+                    <form class="project-form" id="contactForm">
+                        <div class="form-group">
+                            <label>Full Name</label>
+                            <input type="text" id="fullName" placeholder="John Doe" required>
+                        </div>
+                        <div class="form-group">
+                            <label>WhatsApp Number</label>
+                            <input type="tel" id="whatsappNumber" placeholder="+1 234 567 890" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Email Address</label>
+                            <input type="email" id="emailAddress" placeholder="john@company.com" required>
+                        </div>
+                        <div class="form-group">
+                            <label>Project Description</label>
+                            <textarea id="projectDesc" rows="4" placeholder="I need a website for..."
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary" style="width: 100%;">Send Request</button>
+                    </form>
+                </div>
+
+                <!-- Right: About Me -->
+                <div class="contact-trust-col reveal">
+                    <div class="trust-card">
+                        <h3>About Me</h3>
+                        <ul class="trust-list">
+                            <li>🎓 Software Engineering @ Xiamen University Malaysia</li>
+                            <li>💻 Full-Stack Web Developer</li>
+                            <li>📊 Google Looker Studio Expert</li>
+                        </ul>
+
+                        <div class="stat-highlight">
+                            <span class="stat-number">10+</span>
+                            <span class="stat-label">Projects Completed<br>Successfully</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Success Message Modal -->
+    <div id="successMessage" class="success-message">
+        <div class="success-content">
+            <div class="check-icon">✓</div>
+            <h3>Message Sent!</h3>
+            <p>Opening WhatsApp for you now...</p>
+            <button onclick="document.getElementById('successMessage').classList.remove('active')">Close</button>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer style="padding: 40px 0; text-align: center; border-top: 1px solid rgba(0,0,0,0.05); margin-top: 80px;">
+        <div class="container">
+            <p style="color: var(--text-secondary);">&copy; 2025 Amine. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

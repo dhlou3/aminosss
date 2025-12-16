@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AI Projects - Datly</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Datly.</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="projects.html" class="active">Projects</a>
+            </div>
+            <a href="index.html#contact" class="btn btn-primary">Start Project</a>
+        </div>
+    </nav>
+    <header class="hero" style="min-height: 40vh; align-items: flex-end; padding-bottom: 50px;">
+        <div class="container text-center">
+            <a href="projects.html"
+                style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 20px; display: inline-block;">&larr;
+                Back to Categories</a>
+            <h1 class="reveal">AI & <span class="text-highlight">Automation.</span></h1>
+        </div>
+    </header>
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <!-- Project 1 (Moved from Old Projects page) -->
+            <article class="project-expanded reveal">
+                <div class="project-video-container">
+                    <img src="images/project1.jpg"
+                        onerror="this.src='https://images.unsplash.com/photo-1555255707-c07966088b7b?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80'"
+                        style="width: 100%; height: 400px; object-fit: cover;">
+                </div>
+                <div class="project-body">
+                    <div class="project-info-col">
+                        <h3>Predictive Analytics Model</h3>
+                        <p>Machine learning model for business forecasting. We utilized advanced algorithms to predict
+                            sales trends and optimize inventory management.</p>
+                        <span class="badge-pill">Python</span> <span class="badge-pill">Scikit-Learn</span>
+                        <div style="margin-top: 20px;">
+                            <strong>Technical Explanation:</strong><br>
+                            A Random Forest Regressor trained on 5 years of historical sales data to predict seasonal
+                            demand spikes.
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </div>
+    </section>
+    <footer>
+        <div class="container" style="text-align: center;">
+            <p style="color: var(--text-secondary);">&copy; 2025 Datly Agency. All rights reserved.</p>
+        </div>
+    </footer>
+    <script src="js/script.js"></script>
+    <style>
+        .project-expanded {
+            background: white;
+            border-radius: 20px;
+            padding: 20px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+        }
+
+        .project-body {
+            padding: 30px;
+        }
+    </style>
+</body>
+
+</html>

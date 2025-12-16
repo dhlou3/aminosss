@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Projects - Amine</title>
+    <link rel="stylesheet" href="css/style.css">
+    <style>
+        .projects-hero {
+            min-height: 40vh;
+            background: white;
+            display: flex;
+            align-items: flex-end;
+            padding-bottom: 50px;
+        }
+
+        .project-cards {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+            gap: 30px;
+            margin-bottom: 60px;
+        }
+
+        .project-card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 40px rgba(0, 0, 0, 0.08);
+            transition: all 0.4s ease;
+            text-decoration: none;
+            color: inherit;
+        }
+
+        .project-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.12);
+        }
+
+        .project-card-image {
+            width: 100%;
+            height: 280px;
+            object-fit: cover;
+            object-position: top;
+        }
+
+        .project-card-content {
+            padding: 30px;
+        }
+
+        .project-card-badge {
+            display: inline-block;
+            padding: 6px 14px;
+            border-radius: 50px;
+            font-size: 0.75rem;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 12px;
+        }
+
+        .badge-orange {
+            background: rgba(239, 68, 68, 0.1);
+            color: #ef4444;
+        }
+
+        .badge-purple {
+            background: rgba(139, 92, 246, 0.1);
+            color: #8b5cf6;
+        }
+
+        .project-card-title {
+            font-size: 1.5rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+            color: #1d1d1f;
+        }
+
+        .project-card-desc {
+            font-size: 0.95rem;
+            color: #86868b;
+            line-height: 1.6;
+            margin-bottom: 20px;
+        }
+
+        .project-card-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            font-weight: 600;
+            color: #1d1d1f;
+            font-size: 0.95rem;
+        }
+
+        .project-card-link svg {
+            width: 16px;
+            height: 16px;
+            transition: transform 0.3s ease;
+        }
+
+        .project-card:hover .project-card-link svg {
+            transform: translateX(5px);
+        }
+
+        @media (max-width: 768px) {
+            .project-cards {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="logo">Amine.</a>
+            <div class="nav-links">
+                <a href="index.html">Home</a>
+                <a href="Projects.html" class="active">Projects</a>
+            </div>
+            <a href="index.html#contact" class="btn btn-primary">Let's Work</a>
+        </div>
+    </nav>
+
+    <!-- Hero -->
+    <header class="hero projects-hero">
+        <div class="container" style="text-align: center;">
+            <a href="Projects.html"
+                style="color: var(--text-secondary); font-size: 0.9rem; margin-bottom: 20px; display: inline-block;">&larr;
+                Back to Categories</a>
+            <h1 class="reveal">Web <span class="text-highlight">Development.</span></h1>
+        </div>
+    </header>
+
+    <!-- Projects Grid -->
+    <section class="section" style="padding-top: 0;">
+        <div class="container">
+            <div class="project-cards">
+
+                <!-- ShopyGo Card -->
+                <a href="projects-shopygo.html" class="project-card reveal">
+                    <img src="images/shopygo-homepage.png" alt="ShopyGo" class="project-card-image">
+                    <div class="project-card-content">
+                        <span class="project-card-badge badge-orange">E-Commerce</span>
+                        <h3 class="project-card-title">ShopyGo</h3>
+                        <p class="project-card-desc">A complete e-commerce platform for electronics in Tunisia.
+                            Full store, admin dashboard, WhatsApp orders, and promotions.</p>
+                        <span class="project-card-link">
+                            View Project
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+
+                <!-- FrameLume Card -->
+                <a href="projects-framelume.html" class="project-card reveal">
+                    <img src="images/framelume-screenshot.png" alt="FrameLume" class="project-card-image">
+                    <div class="project-card-content">
+                        <span class="project-card-badge badge-purple">AI-Powered</span>
+                        <h3 class="project-card-title">FrameLume</h3>
+                        <p class="project-card-desc">AI-powered canvas print platform. Clients upload photos,
+                            AI generates stunning framed canvases ready to hang.</p>
+                        <span class="project-card-link">
+                            View Project
+                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                                stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M5 12h14M12 5l7 7-7 7" />
+                            </svg>
+                        </span>
+                    </div>
+                </a>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container" style="text-align: center;">
+            <p style="color: var(--text-secondary);">&copy; 2025 Amine. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>
