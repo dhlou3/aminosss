@@ -1,0 +1,400 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Production Projects — Mohamed Amine · Software Engineer</title>
+<meta name="description" content="Production software across mobile Android apps and web — architecture, metrics, and stack breakdowns by Mohamed Amine." />
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="assets/css/style.css" />
+<link rel="stylesheet" href="assets/css/cv-layout.css" />
+
+<!-- Google tag (gtag.js) - Placeholder for Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'G-XXXXXXXXXX');
+</script>
+</head>
+<body class="cv-body">
+
+<!-- ===== LEFT SIDEBAR ===== -->
+<aside class="cv-sidebar" id="cv-sidebar">
+  <div class="cv-logo">
+    <div class="cv-logo-box"><span>MA</span></div>
+    <div class="cv-logo-text"><span class="cv-logo-name">Mohamed<br/>Amine</span></div>
+  </div>
+  <nav class="cv-nav" aria-label="Main navigation">
+    <a href="index.html" class="cv-nav-link" id="nav-home">
+      <span class="cv-nav-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9,22 9,12 15,12 15,22"/></svg></span>
+      Home
+    </a>
+    <a href="projects.html" class="cv-nav-link active" id="nav-projects">
+      <span class="cv-nav-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg></span>
+      Projects
+    </a>
+    <a href="education.html" class="cv-nav-link" id="nav-education">
+      <span class="cv-nav-icon"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10v6M2 10l10-5 10 5-10 5z"/><path d="M6 12v5c3 3 9 3 12 0v-5"/></svg></span>
+      Education
+    </a>
+  </nav>
+</aside>
+
+<header class="cv-mobile-header">
+  <a href="index.html" class="cv-mobile-logo">Mohamed Amine</a>
+  <button class="cv-burger" id="cv-burger" aria-label="Toggle menu" aria-expanded="false">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="cv-main" id="cv-main">
+<div class="bg-grid"></div>
+<main>
+
+
+
+  <!-- ===== PROJECTS ===== -->
+  <section class="section wrap" style="padding-top:0;">
+
+    <!-- PROJECT 01 — Halal Dating App (Android, Malaysia) -->
+    <article class="project reveal">
+      <div class="project-head">
+        <div>
+          <span class="project-index mono">PROJECT 01 / ANDROID — MALAYSIA</span>
+          <h3>Halal Matchmaking App — AI Compatibility Engine</h3>
+          <p>
+            A production Flutter Android application built for a client in Malaysia.
+            Users complete a structured profile — about themselves and what
+            they're looking for in a partner — and an AI compatibility
+            engine scores every potential match, surfacing a live
+            compatibility percentage for each profile shown.
+          </p>
+        </div>
+        <span class="project-platform">Flutter · Android</span>
+      </div>
+
+      <div class="project-body">
+        <div class="project-arch" data-tilt>
+          <span class="arch-label mono">Product screenshot — Android app</span>
+          <div class="shot-row" style="justify-content:center; margin-bottom:1.75rem;">
+            <div class="shot-frame phone">
+              <img src="assets/img/project-dating-app.png" alt="Halal matchmaking Android app home screen showing profile completeness and taaruf questionnaire" />
+            </div>
+          </div>
+          <span class="arch-label mono">System architecture</span>
+          <div class="arch-diagram">
+            <div class="arch-row">
+              <div class="arch-node">UI Layer — Profile &amp; Discovery</div>
+            </div>
+            <div class="arch-connector">↓ reads / writes ↓</div>
+            <div class="arch-row">
+              <div class="arch-node core">Riverpod — State Controllers</div>
+            </div>
+            <div class="arch-connector">↓ scores matches ↓</div>
+            <div class="arch-row">
+              <div class="arch-node core">AI Compatibility Engine</div>
+            </div>
+            <div class="arch-connector">↓ persists ↓</div>
+            <div class="arch-row">
+              <div class="arch-node">Firebase — Cloud Database &amp; Auth</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-details">
+          <div class="project-metrics">
+            <div>
+              <div class="metric-num">500+</div>
+              <div class="metric-label">Followers in 48 hours</div>
+            </div>
+            <div>
+              <div class="metric-num">0</div>
+              <div class="metric-label">Paid promotion used</div>
+            </div>
+            <div>
+              <div class="metric-num">94</div>
+              <div class="metric-label">Profile questions per user</div>
+            </div>
+          </div>
+
+          <div class="project-block">
+            <h5>Key features</h5>
+            <ul>
+              <li>Comprehensive halal matchmaking platform featuring over 70 distinct screens, including full user profiles, discovery feeds, and secure in-app chat</li>
+              <li>Guided taaruf-style questionnaire building a structured, halal-conscious personal profile and AI dossier</li>
+              <li>AI compatibility scoring engine comparing each user's answers against a prospective match's stated preferences</li>
+              <li>Reached 500+ followers within 2 days of launch with zero paid promotion, on organic interest alone</li>
+            </ul>
+          </div>
+
+          <div class="project-block">
+            <h5>Tech stack</h5>
+            <div class="stack-pills">
+              <span>Flutter</span><span>Dart</span><span>Riverpod</span><span>Firebase</span><span>Android</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 02 — Multi-Industry POS Suite (Tunisia, Android) -->
+    <article class="project reveal">
+      <div class="project-head">
+        <div>
+          <span class="project-index mono">PROJECT 02 / ANDROID — TUNISIA</span>
+          <h3>POS Software Suite — 5 Industry Versions</h3>
+          <p>
+            A point-of-sale software suite built in five tailored versions
+            for coffee shops, supermarkets, restaurants, and other retail
+            formats. Developed natively for Android using Flutter and Dart.
+            Actively used by dozens of businesses across Tunisia every day.
+          </p>
+        </div>
+        <span class="project-platform">Android · 5 versions</span>
+      </div>
+
+      <div class="project-body">
+        <div class="project-arch" data-tilt>
+          <span class="arch-label mono">Product screenshots — Android app</span>
+          <div class="shot-row" style="justify-content:center; gap:1.25rem; margin-bottom:1.75rem;">
+            <div class="shot-frame phone">
+              <img src="assets/img/project-pos-treasury.png" alt="POS Android app — treasury dashboard showing purchases, sales, and stock value in real time" />
+            </div>
+            <div class="shot-frame phone">
+              <img src="assets/img/project-pos-purchasing.png" alt="POS Android app — supplier purchasing and payment management screen" />
+            </div>
+          </div>
+          <span class="arch-label mono">System architecture</span>
+          <div class="arch-diagram">
+            <div class="arch-row">
+              <div class="arch-node">Android UI — Flutter</div>
+            </div>
+            <div class="arch-connector">↓ manages state via ↓</div>
+            <div class="arch-row">
+              <div class="arch-node core">Riverpod — Core Business Logic</div>
+            </div>
+            <div class="arch-connector">↓ persists to ↓</div>
+            <div class="arch-row">
+              <div class="arch-node core">Isar — Local Database</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-details">
+          <div class="project-metrics">
+            <div>
+              <div class="metric-num">5</div>
+              <div class="metric-label">Industry-tailored versions</div>
+            </div>
+            <div>
+              <div class="metric-num">Dozens</div>
+              <div class="metric-label">Businesses running daily</div>
+            </div>
+            <div>
+              <div class="metric-num">Daily</div>
+              <div class="metric-label">Active use across Tunisia</div>
+            </div>
+          </div>
+
+          <div class="project-block">
+            <h5>Key features</h5>
+            <ul>
+              <li>Real-time treasury dashboard tracking purchases, sales, stock value, discounts, and net profit/loss per business</li>
+              <li>Full supplier purchasing workflow — supplier accounts, payment methods (cash, cheque), credit tracking, and document history</li>
+              <li>Built purely in Flutter and Dart, ensuring a smooth, native-like experience on Android hardware</li>
+              <li>Five distinct configurations tailored to different retail formats — coffee shops, supermarkets, restaurants, and more</li>
+            </ul>
+          </div>
+
+          <div class="project-block">
+            <h5>Tech stack</h5>
+            <div class="stack-pills">
+              <span>Flutter</span><span>Dart</span><span>Riverpod</span><span>Isar</span><span>Android SDK</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 03 — Web Platform (Ooredoo / E-Commerce, Tunisia) -->
+    <article class="project reveal">
+      <div class="project-head">
+        <div>
+          <span class="project-index mono">PROJECT 03 / WEB — TUNISIA</span>
+          <h3>E-Commerce Platform — Featuring Ooredoo</h3>
+          <p>
+            A bilingual (EN/FR) e-commerce website for consumer electronics
+            and mobile accessories, live in production, with Ooredoo — one
+            of Tunisia's largest telecom operators — among the brands
+            featured directly in the storefront.
+          </p>
+        </div>
+        <span class="project-platform">Web · Live in production</span>
+      </div>
+
+      <div class="project-body">
+        <div class="project-arch" data-tilt>
+          <span class="arch-label mono">Product screenshots — website</span>
+          <div class="shot-row" style="flex-direction:column; margin-bottom:1.75rem;">
+            <div class="shot-frame browser">
+              <div class="shot-chrome"><span></span><span></span><span></span></div>
+              <img src="assets/img/project-web-hero.png" alt="E-commerce storefront homepage with category navigation including Ooredoo, and a promotional hero banner" />
+            </div>
+            <div class="shot-frame browser">
+              <div class="shot-chrome"><span></span><span></span><span></span></div>
+              <img src="assets/img/project-web-products.png" alt="E-commerce storefront product listings showing phones and Bluetooth headsets with pricing" />
+            </div>
+          </div>
+        </div>
+
+        <div class="project-details">
+          <div class="project-metrics">
+            <div>
+              <div class="metric-num">2</div>
+              <div class="metric-label">Languages — EN / FR</div>
+            </div>
+            <div>
+              <div class="metric-num">Live</div>
+              <div class="metric-label">In production</div>
+            </div>
+            <div>
+              <div class="metric-num">1</div>
+              <div class="metric-label">Major telecom brand — Ooredoo</div>
+            </div>
+          </div>
+
+          <div class="project-block">
+            <h5>Key features</h5>
+            <ul>
+              <li>Bilingual storefront (English/French) serving the Tunisian market, with category navigation across phones, audio, accessories, and more</li>
+              <li>Dedicated Ooredoo storefront category, integrating one of Tunisia's largest telecom operators directly into the shopping experience</li>
+              <li>Promotional campaign banners and deal sections built for rapid seasonal turnover</li>
+              <li>Full product catalog with pricing, imagery, and cart/wishlist flows for daily retail traffic</li>
+            </ul>
+          </div>
+
+          <div class="project-block">
+            <h5>Tech stack</h5>
+            <div class="stack-pills">
+              <span>HTML/CSS/JS</span><span>Responsive Design</span><span>i18n (EN/FR)</span><span>E-commerce</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+    <!-- PROJECT 04 — DATLY: Next-Gen AI Notary Desktop Suite (Tunisia) -->
+    <article class="project reveal">
+      <div class="project-head">
+        <div>
+          <span class="project-index mono">PROJECT 04 / DESKTOP — TUNISIA</span>
+          <h3>DATLY — Next-Gen AI Notary Suite &amp; Automated Contract Engine</h3>
+          <p>
+            The <strong>first dedicated software suite for Oudoul Ichhed (عدول إشهاد / Notaires) in Tunisia</strong>. 
+            Engineered from scratch to automate notary office workflows, reducing legal contract assembly time from 45 minutes down to 12–15 seconds while ensuring zero mathematical or typographical errors in official deeds. Launched in September 2026 and already deployed &amp; sold to commercial notary offices across Tunisia.
+          </p>
+        </div>
+        <span class="project-platform">Desktop · Python &amp; Qt</span>
+      </div>
+
+      <div class="project-body">
+        <div class="project-arch" data-tilt>
+          <span class="arch-label mono">Product screenshots — Desktop application</span>
+          <div class="shot-row" style="flex-direction:column; gap:1.25rem; margin-bottom:1.75rem;">
+            <div class="shot-frame browser">
+              <div class="shot-chrome"><span></span><span></span><span></span></div>
+              <img src="assets/img/project-adoul-recognition.png" alt="DATLY Desktop — Biometric Client Check-In with OpenCV YuNet &amp; SFace Neural Recognition" />
+            </div>
+            <div class="shot-frame browser">
+              <div class="shot-chrome"><span></span><span></span><span></span></div>
+              <img src="assets/img/project-adoul-documents.png" alt="DATLY Desktop — Multimodal AI Document OCR, Voice Dictation &amp; Hasibat Al-Farida Inheritance Calculator" />
+            </div>
+          </div>
+          <span class="arch-label mono">System architecture</span>
+          <div class="arch-diagram">
+            <div class="arch-row">
+              <div class="arch-node">PySide6 (Qt6) Desktop GUI — Modern Glassmorphism QSS</div>
+            </div>
+            <div class="arch-connector">↓ sub-100ms offline facial matching ↓</div>
+            <div class="arch-row">
+              <div class="arch-node core">OpenCV DNN — YuNet Detector &amp; SFace Recognizer ONNX</div>
+            </div>
+            <div class="arch-connector">↓ multimodal OCR &amp; voice parsing ↓</div>
+            <div class="arch-row">
+              <div class="arch-node core">Gemini 3.6 Flash / GPT-4o Vision &amp; Audio Transcription</div>
+            </div>
+            <div class="arch-connector">↓ legal compliance calculation ↓</div>
+            <div class="arch-row">
+              <div class="arch-node core">Hasibat Al-Farida — Tunisian Code Article 191 Inheritance Engine</div>
+            </div>
+            <div class="arch-connector">↓ encrypted storage &amp; multi-PC sync ↓</div>
+            <div class="arch-row">
+              <div class="arch-node">SQLite (DPAPI Encrypted) + Local TCP Socket Server (Multi-Station)</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="project-details">
+          <div class="project-metrics">
+            <div>
+              <div class="metric-num">1st</div>
+              <div class="metric-label">Notary Software in Tunisia</div>
+            </div>
+            <div>
+              <div class="metric-num">95%</div>
+              <div class="metric-label">Speedup (45m → 12s)</div>
+            </div>
+            <div>
+              <div class="metric-num">Sold</div>
+              <div class="metric-label">Commercial deployments</div>
+            </div>
+          </div>
+
+          <div class="project-block">
+            <h5>Key features &amp; AI modules</h5>
+            <ul>
+              <li><strong>1st Oudoul Ichhed Software in Tunisia</strong>: Pioneered digital transformation for Tunisian notary practices (عدل إشهاد), launched Sep 2026 with immediate commercial sales.</li>
+              <li><strong>Biometric Client Check-In (&lt; 100ms)</strong>: OpenCV YuNet &amp; SFace ONNX neural networks run 100% offline on local hardware to recognize arriving clients instantly at reception.</li>
+              <li><strong>Multimodal AI Document Scanner &amp; OCR</strong>: Extracts Tunisian National IDs (CIN Recto-Verso), Property Titles (Titre Foncier / شهادة ملكية), and Death Certificates (حجة وفاة) via Gemini Vision &amp; GPT-4o LLMs.</li>
+              <li><strong>AI Voice Dictation &amp; Clause Parsing</strong>: Converts spoken notary dictations into structured legal preamble variables and contract clauses (الفصول) automatically.</li>
+              <li><strong>"Hasibat Al-Farida" Inheritance Engine</strong>: Resolves multi-generational successions (المناسخات المتعاقبة), fractional shares, and mandatory bequests (الوصية الواجبة - Art. 191 CPS) into formatted legal deeds.</li>
+              <li><strong>Enterprise Desktop Security &amp; Sync</strong>: Local TCP Socket Server for multi-station office sync, DPAPI encrypted API keys, and PyInstaller / Inno Setup Windows installer bundle.</li>
+            </ul>
+          </div>
+
+          <div class="project-block">
+            <h5>Tech stack</h5>
+            <div class="stack-pills">
+              <span>Python 3.13</span><span>PySide6 (Qt6)</span><span>OpenCV (YuNet &amp; SFace)</span><span>Gemini Vision</span><span>GPT-4o</span><span>SQLite</span><span>Speech AI</span><span>PyInstaller</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
+
+  </section>
+
+
+
+</main>
+</div><!-- /cv-main -->
+
+<script src="assets/js/main.js"></script>
+<script>
+  const burger = document.getElementById('cv-burger');
+  const sidebar = document.getElementById('cv-sidebar');
+  burger?.addEventListener('click', () => {
+    const open = sidebar.classList.toggle('is-open');
+    burger.setAttribute('aria-expanded', open);
+  });
+  document.querySelectorAll('.cv-nav-link').forEach(link => {
+    link.addEventListener('click', () => sidebar.classList.remove('is-open'));
+  });
+</script>
+</body>
+</html>
